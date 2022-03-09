@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Simple_REST</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Riis\OneDrive - Zealand Sjællands Erhvervsakademi\Datamatiker\3. Semester\+Obl Opgave 1\Simple REST\Simple REST\Simple REST.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\Riis\OneDrive - Zealand Sjællands Erhvervsakademi\Datamatiker\3. Semester\+Obl Opgave 1\Simple REST\Simple REST\Simple REST.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Car Class Library">
+      <HintPath>..\..\Car Class Library\Car Class Library\bin\Debug\net5.0\Car Class Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

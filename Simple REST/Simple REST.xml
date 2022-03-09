@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Simple REST</name>
+    </assembly>
+    <members>
+        <member name="T:Simple_REST.Controllers.CarsController">
+            <summary>
+            Controls cars in database
+            </summary>
+        </member>
+        <member name="M:Simple_REST.Controllers.CarsController.Get(System.String,System.Nullable{System.Int32},System.String)">
+            <summary>
+            Input search criteria for model or license. Price is given as a maximum value
+            </summary>
+            <param name="filterModel"></param>
+            <param name="filterPrice"></param>
+            <param name="filterLicense"></param>
+            <returns>List of cars that contain all given criteria</returns> 
+            <response code="200">Car(s) retrieved successfully</response>
+            <response code="404">No car found</response>
+        </member>
+        <member name="M:Simple_REST.Controllers.CarsController.Get(System.Int32)">
+            <summary>
+            Input ID for a car
+            </summary>
+            <param name="id"></param>
+            <returns>The car object with given ID</returns> 
+            <response code="200">Car retrieved successfully</response>
+            <response code="404">Car not found</response>
+        </member>
+        <member name="M:Simple_REST.Controllers.CarsController.Post(Car_Class_Library.Car)">
+            <summary>
+            Add car object to database
+            </summary>
+            <param name="value"></param>
+            <returns>Car that was added</returns>
+            <response code="201">Car created successfully</response>
+            <response code="400">Variable(s) out of range or null</response>
+        </member>
+        <member name="M:Simple_REST.Controllers.CarsController.Delete(System.Int32)">
+            <summary>
+            Deletes car object from database
+            </summary>
+            <param name="id"></param>
+            <returns>Car that was deleted</returns>
+            <response code="200">Car deleted successfully</response>
+            <response code="404">Car not found</response>
+        </member>
+    </members>
+</doc>
