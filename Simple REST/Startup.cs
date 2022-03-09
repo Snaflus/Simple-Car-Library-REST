@@ -49,6 +49,8 @@ namespace Simple_REST
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Simple_REST v1"));
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Simple_REST v1"));
             app.UseRouting();
 
             app.UseAuthorization();
